@@ -244,9 +244,9 @@ def winning_team
     team_data[:players].each do |hash|
       counter += hash[:points]
     end
-    team_and_points.push(counter)  
-  end 
-  if 
+    team_and_points.push(counter)
+  end
+  if
 end
 
 
