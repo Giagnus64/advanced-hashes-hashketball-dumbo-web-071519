@@ -244,7 +244,7 @@ def winning_team
     team_data[:players].each do |hash|
       counter += hash[:points]
     end
-    team_and_points.push({
+    teams_and_points.push({
       team_name => counter
     })
   end
