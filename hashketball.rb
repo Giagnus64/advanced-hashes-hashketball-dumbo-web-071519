@@ -262,7 +262,7 @@ def winning_team
   else
     team_won = home_team_name
   end
-return team_won
+p team_won
 end
 
 winning_team
