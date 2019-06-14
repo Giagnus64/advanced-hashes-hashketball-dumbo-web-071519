@@ -235,6 +235,19 @@ def most_points_scored
   end
   return player_name
 end
+def winning_team
+  team_and_points = []
+  team_and_points = []
+  game_hash.each do |(place, team_data)|
+    counter = 0
+    team_and_points.push(team_data[team_name])
+    team_data[:players].each do |hash|
+      counter += hash[:points]
+    end
+    team_and_points.push(counter)  
+  end 
+  if 
+end
 
 
 
