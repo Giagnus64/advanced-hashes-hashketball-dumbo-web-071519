@@ -296,6 +296,7 @@ def long_name_steals_a_ton?
     return true
   else
     return false
+  end
 end
 
 
