@@ -240,7 +240,7 @@ def winning_team
   team_name = 0
   game_hash.each do |(place, team_data)|
     counter = 0
-    team_name = (team_data[team_name])
+    team_name = team_data[:team_name]
     team_data[:players].each do |hash|
       counter += hash[:points]
     end
