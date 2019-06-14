@@ -225,11 +225,11 @@ def most_points_scored
   game_hash.each do |(place, team_data)|
     team_data[:players].each do |hash|
       if points == 0
-        hash[:points] = points
-        hash[:player_name] = player_name
+        points = hash[:points]
+        player_name = hash[:player_name]
       elsif points < hash[:points]
-        hash[:points] = points
-        hash[:player_name] = player_name
+        points = hash[:points]
+        player_name = hash[:player_name]
       end
     end
   end
