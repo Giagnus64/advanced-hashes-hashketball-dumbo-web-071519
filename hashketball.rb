@@ -180,12 +180,29 @@ def player_numbers(team_name)
       team_data[:players].each do |hash|
         jersey_number_array.push(hash[:number])
       end
+    break
     end
   end
   return jersey_number_array
 end
 
-
+def player_stats(player_name)
+  player_stats_hash = {}
+  game_hash.each do |(place, team_data)|
+    team_data[:players].each do |player_hash|
+      if player_hash[:player_name] == player_name
+          player_hash.reduce(player_stats_hash) do |memo, (key, value)|
+            if key != :player_name
+              memo[key] = value
+            end  
+          memo
+          end
+      end
+    end
+  end    
+  return player_stats_hash
+end
+  
 
 
 
