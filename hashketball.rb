@@ -194,15 +194,15 @@ def player_stats(player_name)
           player_hash.reduce(player_stats_hash) do |memo, (key, value)|
             if key != :player_name
               memo[key] = value
-            end  
+            end
           memo
           end
       end
     end
-  end    
+  end
   return player_stats_hash
 end
-  
+
 
 
 
