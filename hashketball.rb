@@ -250,10 +250,10 @@ def winning_team
       #team_name => counter
     #})
     if place == :home
-      home_team_name = team_data[team_name]
+      home_team_name = team_data[:team_name]
       home_points = counter
     else
-      away_team_name = team_data[team_name]
+      away_team_name = team_data[:team_name]
       away_points = counter
     end
   end
