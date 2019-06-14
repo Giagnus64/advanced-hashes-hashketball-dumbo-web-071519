@@ -236,7 +236,7 @@ def most_points_scored
   return player_name
 end
 def winning_team
-  teams_and_points = []
+  #teams_and_points = []
   home_team_name = 0
   away_team_name = 0
   home_points = 0
@@ -246,9 +246,9 @@ def winning_team
     team_data[:players].each do |hash|
       counter += hash[:points]
     end
-    teams_and_points.push({
-      team_name => counter
-    })
+    #teams_and_points.push({
+      #team_name => counter
+    #})
     if place == :home
       home_team_name = team_data[team_name]
       home_points = counter
