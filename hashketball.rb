@@ -248,7 +248,7 @@ def winning_team
       team_name => counter
     })
   end
-  p teams_and_points
+  
 end
 
 winning_team
