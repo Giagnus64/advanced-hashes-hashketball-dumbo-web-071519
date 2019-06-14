@@ -249,7 +249,7 @@ def winning_team
     teams_and_points.push({
       team_name => counter
     })
-    if place = :home
+    if place == :home
       home_team_name = team_data[team_name]
       home_points = counter
     else
