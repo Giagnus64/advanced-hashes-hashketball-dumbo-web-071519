@@ -203,6 +203,22 @@ def player_stats(player_name)
   return player_stats_hash
 end
 
+def big_shoe_rebounds
+  shoe_size = 0
+  rebounds = 0
+  game_hash.each do |(place, team_data)|
+    team_data[:players].each do |hash|
+      if shoe_size = 0
+        shoe_size = hash[:shoe]
+        rebounds = hash[:rebounds]
+      elsif shoe_size < hash[:shoe]
+        shoe_size = hash[:shoe]
+        rebounds = hash[:rebounds]
+      end
+    end
+  end
+  return rebounds  
+end
 
 
 
