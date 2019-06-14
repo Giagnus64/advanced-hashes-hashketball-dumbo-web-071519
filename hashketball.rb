@@ -165,12 +165,13 @@ def team_colors(team_name)
   end
   return team_colors
 end
+
 def team_names
   team_names_array = []
   game_hash.each do |(place, team_data)|
     team_names_array.push(team_data[:team_name])
   end
-return team_names_array
+  return team_names_array
 end
 def player_numbers(team_name)
   jersey_number_array = []
@@ -180,6 +181,8 @@ def player_numbers(team_name)
         jersey_number_array.push(hash[:number])
       end
     end
+  end
+  return jersey_number_array
 end
 
 
